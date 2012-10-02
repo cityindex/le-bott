@@ -1,0 +1,143 @@
+{
+  "name": "hubot",
+  "version": "2.2.1",
+  "dependencies": {
+    "coffee-script": {
+      "version": "1.3.1"
+    },
+    "optparse": {
+      "version": "1.0.3"
+    },
+    "scoped-http-client": {
+      "version": "0.9.7"
+    },
+    "log": {
+      "version": "1.3.0"
+    },
+    "connect": {
+      "version": "2.1.0",
+      "dependencies": {
+        "qs": {
+          "version": "0.4.2"
+        },
+        "mime": {
+          "version": "1.2.4"
+        },
+        "formidable": {
+          "version": "1.0.9"
+        },
+        "crc": {
+          "version": "0.1.0"
+        },
+        "debug": {
+          "version": "0.7.0"
+        }
+      }
+    },
+    "connect_router": {
+      "version": "1.8.6"
+    },
+    "hubot-scripts": {
+      "version": "2.1.3",
+      "dependencies": {
+        "hubot": {
+          "version": "2.3.4",
+          "dependencies": {
+            "coffee-script": {
+              "version": "1.3.3"
+            },
+            "connect": {
+              "version": "2.3.4",
+              "dependencies": {
+                "qs": {
+                  "version": "0.4.2"
+                },
+                "mime": {
+                  "version": "1.2.4"
+                },
+                "formidable": {
+                  "version": "1.0.11"
+                },
+                "crc": {
+                  "version": "0.2.0"
+                },
+                "cookie": {
+                  "version": "0.0.4"
+                },
+                "fresh": {
+                  "version": "0.0.1"
+                },
+                "bytes": {
+                  "version": "0.0.1"
+                },
+                "range-parser": {
+                  "version": "0.0.4"
+                },
+                "debug": {
+                  "version": "0.7.0"
+                }
+              }
+            }
+          }
+        },
+        "redis": {
+          "version": "0.7.2"
+        }
+      }
+    },
+    "cf-runtime": {
+      "version": "0.0.1",
+      "dependencies": {
+        "mongodb": {
+          "version": "0.9.9-8",
+          "dependencies": {
+            "bson": {
+              "version": "0.0.4"
+            }
+          }
+        },
+        "redis": {
+          "version": "0.7.3"
+        },
+        "mysql": {
+          "version": "0.9.6",
+          "dependencies": {
+            "hashish": {
+              "version": "0.0.4",
+              "dependencies": {
+                "traverse": {
+                  "version": "0.6.3"
+                }
+              }
+            }
+          }
+        },
+        "amqp": {
+          "version": "0.1.3"
+        },
+        "pg": {
+          "version": "0.6.18",
+          "dependencies": {
+            "generic-pool": {
+              "version": "1.0.9"
+            }
+          }
+        }
+      }
+    },
+    "irc": {
+      "version": "0.3.3"
+    },
+    "flowdock": {
+      "version": "0.4.1",
+      "dependencies": {
+        "buffertools": {
+          "version": "1.0.7"
+        },
+        "request": {
+          "version": "2.9.152"
+        }
+      }
+    }
+  }
+}

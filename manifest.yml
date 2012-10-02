@@ -1,0 +1,14 @@
+---
+applications:
+  .:
+    name: le-bott
+    framework:
+      name: node
+      info:
+        mem: 64M
+        description: NodeJs application
+        exec: 
+    runtime: node06
+    url: le-bott.cloudfoundry.com
+    mem: 128M
+    instances: 1

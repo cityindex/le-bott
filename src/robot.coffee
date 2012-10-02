@@ -8,7 +8,7 @@ HttpClient = require 'scoped-http-client'
 User       = require './user'
 Brain      = require './brain'
 
-HUBOT_DEFAULT_ADAPTERS = [ "campfire", "shell", "irc" ]
+HUBOT_DEFAULT_ADAPTERS = [ "campfire", "shell", "irc", "flowdock" ]
 
 class Robot
   # Robots receive messages from a chat source (Campfire, irc, etc), and
