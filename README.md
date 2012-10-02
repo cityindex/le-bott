@@ -18,6 +18,13 @@ npm install
 ```
 3\. Deploy to Cloud Foundry as Node.js application, you can provide redis service if your hubot scripts need it.
 
+> Due to a current cloud foundry bug, you must delete ```./node_modules/htmlparser/libxmljs.node``` before uploading, 
+> or during CF staging you will get an error similar to: 
+> ```
+Error 310: Staging failed: 'Staging task failed:
+ Staging plugin failed: /var/vcap/packages/stager/vendor/bundle/ruby/1.9.1/gems/vcap_staging-0.1.63/lib/vcap/staging/plugin/node/npm_support/npm_package.rb:262:in `block in clean_package': undefined method `rm_f' for File:Class (NoMethodError)
+```
+
 ```bash
 vmc push my-hubot-app-name
 ```
@@ -28,49 +35,19 @@ vmc push my-hubot-app-name
 vmc env-add my-hubot-app-name APP_URL=http://my-hubot-app-name.cloudfoundry.com/
 ```
 
-## Configuring for Campfire
-
-To make it work with Campfire you need to create a [Campfire](http://campfirenow.com/) account first. This account is going to be hubot's account. Then, you need to add several environment variables.
-
-1\. First, set Hubot adapter as campfire.
-
-```bash
-vmc env-add my-hubot-app-name HUBOT_ADAPTER=campfire
-```
-
-2\. Provide Campfire hubot's account API token. It can be found in "My info" page after logging in.
-
-```bash
-vmc env-add my-hubot-app-name HUBOT_CAMPFIRE_TOKEN="...."
-```
-
-3\. Provide Campire room IDs. Room ID is a numeric value in URL of the room.
-
-```bash
-vmc env-add my-hubot-app-name HUBOT_CAMPFIRE_ROOMS="123,345"
-```
-
-4\. Provide Campfire subdomain. The subdomain is the first domain part of Campfire URL. For example, if your Campfire URL is `hubot.campfirenow.com` your subdomain is `hubot`.
-
-```bash
-vmc env-add my-hubot-app-name HUBOT_CAMPFIRE_ACCOUNT="...."
-```
-
-5\. Join Campfire chat as another user and you should see your Hubot account there. Run `hubot help`.
-
-## Configuring for IRC
+## Configuring for Flowdock
 
 1\. First, set Hubot adapter as irc.
 
 ```bash
-vmc env-add my-hubot-app-name HUBOT_ADAPTER=irc
+vmc env-add my-hubot-app-name HUBOT_ADAPTER=flowdock
 ```
 
 2\. Set IRC host and rooms.
 
 ```bash
-vmc env-add my-hubot-app-name HUBOT_IRC_SERVER="...."
-vmc env-add my-hubot-app-name HUBOT_IRC_ROOMS="#room1,#room2"
+vmc env-add my-hubot-app-name HUBOT_FLOWDOCK_LOGIN_EMAIL="...."
+vmc env-add my-hubot-app-name HUBOT_FLOWDOCK_LOGIN_PASSWORD="..."
 ```
 
 Other parameters can be found [here](https://github.com/github/hubot/wiki/Adapter:-IRC)
