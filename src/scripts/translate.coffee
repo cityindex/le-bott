@@ -1,13 +1,17 @@
-# Allows Hubot to know many languages.
+# Description:
+#   Allows Hubot to know many languages.
 #
-# hubot translate me <phrase> - Searches for a translation for the <phrase> and then prints that bad boy out.
-# hubot translate me from <source> into <target> <phrase> - Translates <phrase> from <source> into <target>. Both <source> and <target> are optional
-#
+# Commands:
+#   hubot translate me <phrase> - Searches for a translation for the <phrase> and then prints that bad boy out.
+#   hubot translate me from <source> into <target> <phrase> - Translates <phrase> from <source> into <target>. Both <source> and <target> are optional
 
 languages =
   "af": "Afrikaans",
   "sq": "Albanian",
   "ar": "Arabic",
+  "az": "Azerbaijani",
+  "eu": "Basque",
+  "bn": "Bengali",
   "be": "Belarusian",
   "bg": "Bulgarian",
   "ca": "Catalan",
@@ -18,13 +22,17 @@ languages =
   "da": "Danish",
   "nl": "Dutch",
   "en": "English",
+  "eo": "Esperanto",
   "et": "Estonian",
   "tl": "Filipino",
   "fi": "Finnish",
   "fr": "French",
   "gl": "Galician",
+  "ka": "Georgian",
   "de": "German",
   "el": "Greek",
+  "gu": "Gujarati",
+  "ht": "Haitian Creole",
   "iw": "Hebrew",
   "hi": "Hindi",
   "hu": "Hungarian",
@@ -33,7 +41,9 @@ languages =
   "ga": "Irish",
   "it": "Italian",
   "ja": "Japanese",
+  "kn": "Kannada",
   "ko": "Korean",
+  "la": "Latin",
   "lv": "Latvian",
   "lt": "Lithuanian",
   "mk": "Macedonian",
@@ -51,9 +61,12 @@ languages =
   "es": "Spanish",
   "sw": "Swahili",
   "sv": "Swedish",
+  "ta": "Tamil",
+  "te": "Telugu",
   "th": "Thai",
   "tr": "Turkish",
   "uk": "Ukranian",
+  "ur": "Urdu",
   "vi": "Vietnamese",
   "cy": "Welsh",
   "yi": "Yiddish"
