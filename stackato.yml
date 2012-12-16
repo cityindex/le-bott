@@ -1,0 +1,8 @@
+name: le-bott
+instances: 1
+framework:
+  type: node
+mem: 128
+processes:
+  web: $HOME/node_modules/coffee-script/bin/coffee $HOME/bin/hubot
+ignores: ["node_modules", ".git"]
