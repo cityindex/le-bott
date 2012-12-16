@@ -29,7 +29,7 @@ module.exports = (robot) ->
         if err
           msg.send "Chuck Norris says: #{err}"
         else
-          message_from_chuck = JSON.parse(body)
+          message_from_chuck = JSON.parse(body.replace(/\\('|")/g, ''))
           if message_from_chuck.length == 0
             msg.send "Achievement unlocked: Chuck Norris is quiet!"
           else
